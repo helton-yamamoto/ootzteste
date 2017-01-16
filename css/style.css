@@ -4,10 +4,28 @@
 
 .backhead{
 	background-color: #F7811F;
+        border-bottom: 1px solid #F7811F !important;
 }
 
+.white{
+	color:white;
+}
 .modal-footer {
-    padding: 15px;
-    text-align: right;
-    border-top: 1px solid white !important;
+        padding: 15px;
+        text-align: right;
+        border-top: 1px solid white !important;
+}
+
+.footer-font{
+	color:#F7811F;
+        text-align: center;	
+}
+
+.color-task{
+	color: #F7811F;
+}
+
+a:link 
+{ 
+      text-decoration:none; 
 }
