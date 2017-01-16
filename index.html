@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="Helton Y. Yamamoto" content="">
+
+    <title>Página teste</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/384e7bf85a.js"></script>
+
+    <!-- Custom CSS -->
+    <link href="css/portfolio-item.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top backhead" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" ><span class="white"> <i class="fa fa-id-card-o" aria-hidden="true"></i>  Task Manager </span></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <!--
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+                -->
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+        <!-- Related Projects Row -->
+        <div class="row">
+
+            <div class="col-lg-12">
+                <h3 class="page-header"><i class="fa fa-list color-task" aria-hidden="true"></i> To do list</h3>
+            </div>
+
+            <div class="col-lg-12 distance">
+				<!-- Button trigger modal -->
+				<button type="button" class="btn btn-success btn" data-toggle="modal" data-target="#myModal">
+				  + Nova Tarefa
+				</button>
+		    </div>
+        </div>
+				
+	    <!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		     <div class="modal-dialog" role="document">
+				     <div class="modal-content">
+				        <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        <h4 class="modal-title" id="myModalLabel">Criar Tarefa</h4>
+				    </div>
+
+				    <div class="modal-body">
+				      	<div class="form-group">
+	           			 	<label for="Titulo" class="control-label col-xs-2">Título</label>
+	            	        <div class="col-xs-10 distance">
+	                        <input type="text" class="form-control" id="inputEmail" placeholder="Nome da Tarefa">
+	                      </div>
+                        </div>
+				        <div class="form-group">
+				            <label for="textotarefa" class="control-label col-xs-2">Texto</label>
+				            <div class="col-xs-10 distance">
+				               <textarea class="form-control" rows="5" id="comment" placeholder="Descrição da Tarefa"></textarea>
+				            </div>
+				        </div>
+				    </div>
+				    <div class="modal-footer">
+				    
+					        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-ban" aria-hidden="true"></i> Cancelar</button>
+					        <button type="button" class="btn btn-success"><i class="fa fa-floppy-o" aria-hidden="true"></i> Salvar</button>
+				       
+				    </div>
+				    </div>
+			 </div>
+		</div>
+        <!-- Final da modal-->
+            
+        <div class="row">
+            <div class="col-sm-3 col-xs-6">
+                <a href="#">
+                    <p><span class="color-task"><b><i class="fa fa-frown-o fa-2x" aria-hidden="true"></i> Tarefas pendentes:</b></span></p>
+                    <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
+                </a>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <a href="#">
+                    <p><span class="color-task"><b><i class="fa fa-meh-o fa-2x" aria-hidden="true"></i> Tarefas em andamento:</b></span></p>
+           
+                    <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
+                </a>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <a href="#">
+                 
+                     <p><span class="color-task"><b><i class="fa fa-meh-o fa-2x" aria-hidden="true"></i> Tarefas aguardando revisão:</b></span></p>
+                    <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
+                </a>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <a href="#"> <p><span class="color-task"><b><i class="fa fa-smile-o fa-2x" aria-hidden="true"></i> Tarefas Concluídas:</b></span></p>
+                   <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
+                </a>
+            </div>
+            <hr>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="footer-font"><i class="fa fa-id-card-o" aria-hidden="true"></i>  <b>Task Manager 15/01/17</b></p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+     </div>
+     <!-- /.row -->
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
